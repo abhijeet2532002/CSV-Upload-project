@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.set('view engine', 'ejs');
-app.set('views', './view');
+app.set('views', './views');
 
 app.use('/',require('./router/Upload'));
 
