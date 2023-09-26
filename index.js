@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 5005;
+const PORT = process.env.PORT || 5005;
 const db = require('./config/mongoose')
 // import express layout
 const expressLayout = require('express-ejs-layouts');
@@ -22,6 +22,6 @@ app.set('views', './view');
 
 app.use('/',require('./router/Upload'));
 
-app.listen(port,() => {
-    console.log(`router is starting on port ${port}`);
+app.listen(PORT,() => {
+    console.log(`router is starting on port ${PORT}`);
 });
