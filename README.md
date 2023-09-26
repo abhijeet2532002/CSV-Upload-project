@@ -46,7 +46,7 @@ Follow these steps to set up the project:
    npm start
    ```
 
-2. Open your web browser and visit `http://localhost:3000` to access the application.
+2. Open your web browser and visit `http://localhost:5005` to access the application.
 
 3. Use the web interface to:
    - Upload CSV files
@@ -71,11 +71,6 @@ We welcome contributions to this project. To contribute:
 4. Push to the branch: `git push origin feature-name`.
 5. Create a pull request on the original repository.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Additional Sections
 
 ### About
 
@@ -83,24 +78,46 @@ This project aims to simplify CSV data management for users and organizations, m
 
 ### Screenshots
 
-Include screenshots or GIFs of the application in action to provide a visual overview of the project's capabilities.
+![My Page](image.png)
+![Search](image-1.png)
+![Upload](image-2.png)
 
-### Demo
+```markdown
+## Dependencies
 
-If available, provide a link to a live demo of the application for users to test.
+This project relies on the following dependencies. You can install them using npm (Node Package Manager):
 
-### Configuration
+- [Express.js](https://expressjs.com/): A fast, unopinionated, minimalist web framework for Node.js.
+  ```sh
+  npm install express
+  ```
 
-Detail any specific configuration steps needed, such as setting environment variables or configuring database connections.
+- [Multer](https://www.npmjs.com/package/multer): Middleware for handling file uploads.
+  ```sh
+  npm install multer
+  ```
 
-### Dependencies
+- [CSV Parser](https://www.npmjs.com/package/csv-parser): A library for parsing CSV data.
+  ```sh
+  npm install csv-parser
+  ```
 
-List major dependencies along with instructions on how to install them for your project.
+- [EJS](https://www.npmjs.com/package/ejs): A simple templating engine for generating HTML with JavaScript.
+  ```sh
+  npm install ejs
+  ```
 
-### Contributors
+- [Body Parser](https://www.npmjs.com/package/body-parser): Middleware for parsing JSON and URL-encoded request bodies.
+  ```sh
+  npm install body-parser
+  ```
 
-Acknowledge and credit contributors to your project, providing links to their GitHub profiles.
+- [Express-Validator](https://www.npmjs.com/package/express-validator): A set of Express.js middlewares for input validation.
+  ```sh
+  npm install express-validator
+  ```
 
-### Contact
+Make sure to run these commands in your project directory to install the dependencies. You may also want to specify the exact versions of these dependencies in your project's `package.json` file for better consistency and control over your project's environment.
+```
 
-Share contact information or links to your social media profiles for users and contributors to get in touch with you for questions or suggestions.
+Please note that the list of dependencies provided here is just an example. You should tailor the list to include the actual dependencies your project uses. You can find the specific dependencies and their versions in your project's `package.json` file, which is generated when you initialize a Node.js project using `npm init`.
